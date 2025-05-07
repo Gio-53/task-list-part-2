@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: #B1C29E;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+#lista {
+    background-color: #FCE7C8;
+    min-height: 120px;
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 12px;
+    margin-top: 12px; 
+}
+
+#header{
+    width: 240px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    align-self: center;
+}
+.single-task{
+    width: 80%;
+    margin: 0 auto;
+    height: 36px;
+}
+input{
+    outline: none;
+    width: 80%;
+    height: 24px;
+    padding: 6px;
+    margin: 6px;
+}
+
+.done-btn{
+    background-color: #B1C29E;
+    color: #000;
+    border: 1px solid #000;
+    margin-top: 6px;
+}
+
+.done input{
+    background-color: #B1C29E ;
+    text-decoration: line-through;
+    outline: none;
+}
