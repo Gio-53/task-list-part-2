@@ -3,8 +3,6 @@ const taskList = document.querySelector("#list-tasks");
 const ids = []
 let id = 0;
 
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];  
-
 addTaskBtn.addEventListener('click', createTask);
 
 function createTask(){
@@ -47,26 +45,7 @@ function createTask(){
         li.remove(); 
         
       }
-      console.log(taskList);
 
-    updateLocalStorage()
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    tasks.forEach(task => {
-        createTask(task); 
-    });
-});
 
-function updateLocalStorage() {
-    const tasks = [];
-    taskList.querySelectorAll("li").forEach(task => {
-        tasks.push({
-            id: task.id,
-            text: task.querySelector("input").value,
-            done: task.classList.contains("done") 
-        });
-    });
-    localStorage.setItem('tasks', JSON.stringify(tasks)); 
-}
-console.log(taskList);
