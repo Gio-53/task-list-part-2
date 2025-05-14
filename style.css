@@ -55,12 +55,17 @@ input{
     background-color: #B1C29E;
     color: #000;
     border: 1px solid #000;
+
+}
+
+.remove-btn{
+    background-color: red;
+
 }
 
 .remove-btn{
     background-color: red;
 }
-
 .done input{
     background-color: #B1C29E ;
     text-decoration: line-through;

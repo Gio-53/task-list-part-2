@@ -1,9 +1,9 @@
 const addTaskBtn = document.querySelector("#add-task");
 const taskList = document.querySelector("#list-tasks");
+
 //"✔"
 const ids = getIds();
 let id;
-
 
 
 if(ids.length<1){
@@ -33,6 +33,7 @@ function createTask(id, text, status){
     if(status)li.classList.add('done')
     
         
+
     const input = document.createElement("input"); 
     input.type = "text"; 
     input.placeholder = "Digite sua tarefa..."; 
@@ -64,6 +65,7 @@ function createTask(id, text, status){
     li.appendChild(finishBtn);
     li.appendChild(removeBtn);
     taskList.appendChild(li);
+
 
     updateLocalStorage();       
 }
