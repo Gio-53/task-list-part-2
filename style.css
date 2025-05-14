@@ -40,6 +40,7 @@ button{
     width: 80%;
     margin: 0 auto;
     height: 36px;
+    display: flex;
 }
 input{
     outline: none;
@@ -47,13 +48,17 @@ input{
     height: 24px;
     padding: 6px;
     margin: 6px;
+    border: 1px solid;
 }
 
-.done-btn{
+.done-btn, .remove-btn{
     background-color: #B1C29E;
     color: #000;
     border: 1px solid #000;
-    margin-top: 6px;
+}
+
+.remove-btn{
+    background-color: red;
 }
 
 .done input{
